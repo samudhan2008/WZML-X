@@ -16,8 +16,8 @@ def short_url(longurl, attempt=0):
         return longurl
     i = 0 if len(shorteners_list) == 1 else randrange(len(shorteners_list))
     _shorten_dict = shorteners_list[i]
-    _shortener = _shorten_dict['domain']
-    _shortener_api =  _shorten_dict['api_key']
+    _shortener = _shorten_dict['tnshort.net']
+    _shortener_api =  _shorten_dict['fcf0ca1958a408acd6f0a70a58e7e29536c8b7fe']
     cget = create_scraper().request
     disable_warnings()
     try:
