@@ -220,7 +220,7 @@ def wztgClient(*args, **kwargs):
         kwargs['max_concurrent_transmissions'] = 1000
     return tgClient(*args, **kwargs)
 
-IS_PREMIUM_USER = False
+IS_PREMIUM_USER = True
 user = ''
 USER_SESSION_STRING = environ.get('USER_SESSION_STRING', '')
 if len(USER_SESSION_STRING) != 0:
